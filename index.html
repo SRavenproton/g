@@ -149,9 +149,9 @@
   <div class="avatar"><img id="hero-avatar" alt="頭像"></div>
   <div class="kicker">2026 / 11 / 28 投票前 · 自保手冊</div>
   <h1>看破<span class="hl">網軍</span>，認得每張<span class="hl">選票</span></h1>
-  <p class="lead">兩個工具一頁收：認得中共認知作戰的 12 招、看清 22 縣市長參選人。<br>點下面切換。</p>
+  <p class="lead">兩個工具一頁收：認得中共認知作戰的 24 招、看清 22 縣市長參選人。<br>點下面切換。</p>
   <div class="tabs">
-    <button class="tab active" data-view="cards">認知作戰 · 12 招拆解</button>
+    <button class="tab active" data-view="cards">認知作戰 · 24 招拆解</button>
     <button class="tab" data-view="map">22 縣市長 · 參選地圖</button>
   </div>
 </header>
@@ -202,9 +202,9 @@
 (function(){
 
 const CARDS = [
- {num:"01", tag:"母題 · 失敗論",   attack:"先讓你覺得「台灣撐不住、不如靠別人」。弱小無能、社會內耗、圖謀私利、外國害台 ── 四種說法都通往同一個結論。信心被抽乾，後面什麼都好帶。",
+ {num:"01", tag:"母題 · 失敗論",   attack:"先讓你覺得「台灣撐不住、不如靠別人」。弱小無能、社會內耗、圖謀私利、外國害台，四種說法都通往同一個結論。信心被抽乾，後面什麼都好帶。",
   method:"看到「台灣注定…」的論調先警覺：那是地基，不是結論。<b>任何關於國家戰敗或政府投降的消息，都是假消息。</b>", src:`<a href="https://prepare.mnd.gov.tw/misinformation-prevention" target="_blank" rel="noopener noreferrer">國防部全民防衛動員署《全民安全指引》</a>`},
- {num:"02", tag:"疑美 · 疑軍",     attack:"「軍購是浪費、美國會棄台、打不贏不如不抵抗」。目的是讓你支持砍國防、放掉防衛意志，把你和盟友拆開 ── 孤立了才好下手。",
+ {num:"02", tag:"疑美 · 疑軍",     attack:"「軍購是浪費、美國會棄台、打不贏不如不抵抗」。目的是讓你支持砍國防、放掉防衛意志，把你和盟友拆開，孤立了才好下手。",
   method:"合理檢視可以，全盤死心剛好是對手要的。用 <b>SIFT</b>：停一下→查來源→找其他可信報導→把數字溯回原始脈絡。再問：誰最希望台灣沒有朋友？", src:`<a href="https://hapgood.us/2019/06/19/sift-the-four-moves/" target="_blank" rel="noopener noreferrer">SIFT 方法（國際數位素養）</a>`},
  {num:"03", tag:"養套殺 · 經濟糖衣", attack:"農產大單、招待旅遊、進香團、觀光財，包裝成善意。實際是「先養、再套、最後殺」，把依賴當善意，把抗風險的人說成害你沒生意。",
   method:"<b>冷、確、查</b>：先別急（茶涼了再喝）→ 確認誰委託、誰得利 → 查核。再問一句：這份好處，之後要我用什麼還？", src:`<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a> 查核機構`},
@@ -219,13 +219,39 @@ const CARDS = [
  {num:"08", tag:"偽冒媒體 · 仿冒新聞", attack:"冒出長得像新聞網站、但你沒聽過的來源，或仿冒真媒體的名字、複製版面，真假混雜餵給你；也會盜用真人帳號發文。",
   method:"看<b>「關於我們」、有沒有負責人、網址有沒有錯字、設計破綻</b>，交叉比對真正的台灣媒體。可疑就丟 <b>Cofacts / MyGoPen</b> 查。陌生網域的獨家先存疑。", src:`<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a> · <a href="https://cofacts.tw/" target="_blank" rel="noopener noreferrer">Cofacts 真的假的</a>`},
  {num:"09", tag:"線下滲透 · 賭盤",   attack:"戰場不只在網路。國安局指認的介選手段：地下賭盤操縱選情、落地招待特定人士、觀光名義滲透、找在地協力者代操。",
-  method:"<b>賠率不是民意，團客不是觀光。</b>有人拿賭盤賠率當「行情」帶你跟風 ── 那是設計過的數字。遇到拉攏：記錄、查證，必要時報警或撥 <b>165</b>。", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>揭露 · <a href="https://165.npa.gov.tw/" target="_blank" rel="noopener noreferrer">警政署 165</a>`},
+  method:"<b>賠率不是民意，團客不是觀光。</b>有人拿賭盤賠率當「行情」帶你跟風，那是設計過的數字。遇到拉攏：記錄、查證，必要時報警或撥 <b>165</b>。", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>揭露 · <a href="https://165.npa.gov.tw/" target="_blank" rel="noopener noreferrer">警政署 165</a>`},
  {num:"10", tag:"仇日 · 離間所有朋友", attack:"不只疑美。把民生小事接到「親日賣台」這種框架，讓你連台灣的其他朋友（日本）也一起討厭。朋友越少，越好下手。",
   method:"對任何「某國對台不安好心」的大論述先停一下。問：這在拉近台灣和世界，還是把台灣推成孤島？", src:`<a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG 中共月報</a>`},
  {num:"11", tag:"精準分眾 · 客製投餵", attack:"已揭露的操作：對方蒐集大量你的發言，把人分成「頑固／友好／搖擺」，再用 AI 餵你最容易動搖的客製訊息。你以為「剛好滑到」，其實是被挑中投餵。",
   method:"你刷到的東西剛好精準戳中你的情緒，別當巧合。主動跨出同溫層、看不同來源，打斷被投餵的迴路。", src:`<a href="https://globaltaiwan.org/" target="_blank" rel="noopener noreferrer">Global Taiwan Institute</a>`},
- {num:"12", tag:"自保總則",        attack:"記住一件事：真正在操弄你的是外部，它最想要的，是你跟自己人先打起來。越急、越獨家、越剛好週五晚上爆 ── 越要等。",
-  method:"<b>不製造、不輕信、不轉傳、要查證。</b>看到先停三秒，讓子彈飛過週末再看查證。把這 12 點當疫苗，轉給你在乎的人，就是反制。", src:`<a href="https://prepare.mnd.gov.tw/misinformation-prevention" target="_blank" rel="noopener noreferrer">國防部全民防衛動員署《全民安全指引》</a>`},
+ {num:"12", tag:"自保總則",        attack:"記住一件事：真正在操弄你的是外部，它最想要的，是你跟自己人先打起來。越急、越獨家、越剛好週五晚上爆，越要等。",
+  method:"<b>不製造、不輕信、不轉傳、要查證。</b>看到先停三秒，讓子彈飛過週末再看查證。把這 24 點當疫苗，轉給你在乎的人，就是反制。", src:`<a href="https://prepare.mnd.gov.tw/misinformation-prevention" target="_blank" rel="noopener noreferrer">國防部全民防衛動員署《全民安全指引》</a>`},
+
+ // 13-24 · 救友軍：別讓自己人先打起來（延伸第 07、12 招）· 每張開頭都是分裂文章的關鍵字目標
+ {num:"13", tag:"「青鳥傻子／青鳥安靜得像啞巴」", attack:"專洗友軍的一招：讓你開始用對方的詞罵自己陣營，你還以為自己很清醒、很中立，<b>其實被遞了把刀去捅同邊的人</b>。",
+  method:"看到自己人這樣講，私下提醒就好：「你罵青鳥傻子的時候，對面正在鼓掌。<b>你想護的跟他們是同一群人</b>，準星會不會被挪了？」", src:"本頁框架 · 救友軍（延伸第 07 招 撕裂內耗）"},
+ {num:"14", tag:"「真正愛台才不會…」", attack:"設一個沒人過得了的忠誠門檻，逼大家互相查戶口，<b>愛台灣的自己先碎成一塊塊</b>。",
+  method:"「我們幾時開始幫人驗血統了？<b>當年就是這句話把我們切碎的</b>。這標準誰定的？」", src:`<a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a> 中共認知作戰研究`},
+ {num:"15", tag:"「綠蛆／4%／側翼」", attack:"把活生生的人壓成一個蔑稱，貼上去你就不必再想他說的有沒有道理，<b>腦直接關機</b>。",
+  method:"「你用『綠蛆』罵的那個，也是會為台灣投票的人。<b>標籤一貼思考就停</b>，這正是對方要的。」", src:"本頁框架 · 救友軍"},
+ {num:"16", tag:"「我們偉大的花媽／我們青鳥」（反諷自己人）", attack:"用「我們…」的口吻講反話，假裝同陣營、實則嘲諷，<b>讓你不知不覺站到嘲笑自己人的位置</b>。",
+  method:"「你那句反諷我懂你在氣什麼。但這語氣是設計好的，<b>它要你嘲笑自己人</b>，氣完了得利的是誰？」", src:`<a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a>`},
+ {num:"17", tag:"「台北人命值錢／南部被無視」", attack:"拿真實的南北落差，<b>把矛頭從中央治水責任挪去南北互恨</b>，讓同島的人先互咬。",
+  method:"「淹水死人是真的、不公平也是真的。但<b>有人正拿這個痛要我們南北互恨</b>，痛被借去當燃料了。」", src:"本頁框架 · 救友軍"},
+ {num:"18", tag:"「雙標！為什麼 A 有報導 B 沒有」", attack:"用選擇性對比餵你被害感，養出「到處是黑幕」的體質，<b>最後你誰都不信、連真媒體也不信</b>。",
+  method:"「先查是真的只報一邊、還是影片被剪過？<b>這種『處處不公』的感覺，是有人故意養的。</b>」", src:"綜整查核機構建議"},
+ {num:"19", tag:"「都是中央的錯／中央八成」", attack:"把任何地方失職一律上推中央、順手嘲諷，<b>讓你分不清究責和帶風向</b>，跟著一起打。",
+  method:"「責任可以查，但這句話是要你停止追問本地誰沒做好。<b>先分清：你在究責，還是被帶？</b>」", src:"本頁框架 · 救友軍"},
+ {num:"20", tag:"「阿共沒那麼閒／別什麼都牽拖中共」", attack:"反過來嘲笑「提防認知作戰」的人疑神疑鬼，讓你卸下警覺，<b>降低你的防備本身就是攻擊</b>。",
+  method:"「提防不是疑神疑鬼，國安局、IORG 都查過案例。<b>它要你覺得『想太多』，剛好是它最舒服的時候。</b>」", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a> · <a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a>`},
+ {num:"21", tag:"「1450／你們也是網軍」", attack:"把「網軍」這頂帽子反扣回自己人，真假混在一起，<b>讓你開始懷疑同陣營每個認真的人</b>。",
+  method:"「真有網軍，但不是每個跟你同邊的認真的人都是。<b>帽子亂扣，最後你會孤立到只剩自己。</b>」", src:"本頁框架 · 救友軍"},
+ {num:"22", tag:"「投了也沒用／都一樣爛」", attack:"不必說服你支持誰，只要讓你覺得「沒差」，你不去投它就贏了，<b>冷感就是它要的結果</b>。",
+  method:"「『都一樣爛』這四個字，是有人很努力要你相信的。<b>你不投那張票，剛好是對方想替你作廢的。</b>」", src:"本頁框架 · 救友軍"},
+ {num:"23", tag:"「塔綠斑／護航仔」", attack:"給每個立場預鑄一個敵意標籤，對話還沒開始就先定罪，<b>讓自己人連話都說不下去</b>。",
+  method:"「貼標籤之前先聽他到底說了什麼。<b>一開口就定罪，就中了它『讓自己人吵到不能對話』的招。</b>」", src:"本頁框架 · 救友軍"},
+ {num:"24", tag:"「民進黨不也…／互打比爛」", attack:"用「大家都一樣髒」把是非拉平，讓你放棄分辨、陷進內部互打，<b>忘了真正在外面看戲的是誰</b>。",
+  method:"「比爛沒有盡頭、只會讓我們互耗。先問一句：<b>誰最希望我們把力氣全花在打自己人身上？</b>」", src:"本頁框架 · 救友軍總則（延伸第 12 招）"},
 ];
 
 const grid = document.getElementById('grid');

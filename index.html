@@ -137,12 +137,18 @@
   .vrow{display:flex;align-items:center;gap:10px;margin:2px 0 10px}
   .vimg{width:56px;height:56px;border-radius:50%;object-fit:cover;border:2px solid var(--mint);flex:none;background:#fff}
   .vname{color:var(--mint);font-weight:700;font-size:13.5px}
+  #vote-cd{display:inline-block;margin-top:6px;font-weight:700;color:var(--teal-d)}
+  #vote-cd b{font-size:1.5em;color:var(--teal);letter-spacing:.04em}
+  .herocd{position:relative;font-size:13.5px;color:var(--mint);font-weight:700;letter-spacing:.14em;margin:2px 0 10px;min-height:1.4em;font-variant-numeric:tabular-nums}
+  .herocd b{font-size:1.7em;color:#fff;letter-spacing:.04em;text-shadow:0 1px 2px rgba(0,0,0,.15)}
+  #vote-cd{font-variant-numeric:tabular-nums}
 </style>
 </head>
 <body>
 <header>
   <div class="avatar"><img id="hero-avatar" alt="頭像"></div>
-  <div class="kicker">2026 / 11 / 28 投票前 · 自保手冊</div>
+  <div class="kicker">2026 / 11 / 28（六）投票前 · 自保手冊</div>
+  <div class="herocd" id="vote-cd-hero"></div>
   <h1><span style="display:inline-block">看破<span class="hl">分裂臺灣手法</span>，</span><span style="display:inline-block">認得每張<span class="hl">選票</span></span></h1>
   <p class="lead">三個工具一頁收：<br>認得中共認知作戰的 24 招<br>看清 22 縣市長參選人<br>記住中共對世界的 24 則惡行<br>點下面切換。</p>
   <div class="tabs">
@@ -160,14 +166,17 @@
   <p class="boundary">這就是國安局、IORG 已揭露的中共對台認知作戰，本頁直接點名。我們戳破的是手法、保護的是你的判斷力與中間的存在權，不是獵個人。</p>
   <p>· 破解手法來源（點機關名到官網）：<a href="https://prepare.mnd.gov.tw/misinformation-prevention" target="_blank" rel="noopener noreferrer">國防部全民防衛動員署《全民安全指引》</a>、<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a>「冷確查」、<a href="https://tfc-taiwan.org.tw/" target="_blank" rel="noopener noreferrer">台灣事實查核中心</a>（深偽四招）、<a href="https://hapgood.us/2019/06/19/sift-the-four-moves/" target="_blank" rel="noopener noreferrer">SIFT 方法</a>、<a href="https://165.npa.gov.tw/" target="_blank" rel="noopener noreferrer">內政部警政署 165</a>、<a href="https://cofacts.tw/" target="_blank" rel="noopener noreferrer">Cofacts 真的假的</a>。各標於每張背面。</p>
   <p>· 攻擊手法的揭露依據：<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>年度《中共對台認知作戰分析》、<a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">台灣資訊環境研究中心 IORG</a>、<a href="https://doublethinklab.org/" target="_blank" rel="noopener noreferrer">台灣民主實驗室</a>、<a href="https://globaltaiwan.org/" target="_blank" rel="noopener noreferrer">Global Taiwan Institute</a>。</p>
-  <p class="note">誠實註記：國安局負責「揭露手法」，未發布給民眾的逐項破解口訣，故本頁破解法不掛國安局名下，改掛真正提出該方法的機關／機構。這頁是純靜態單一檔，沒有留言、登入、資料庫，網軍無從灌爆或竄改；可離線開啟、可自由轉傳、可放任何靜態主機。轉給你在乎的人，就是反制。</p>
+  <p>· 這 24 招在替誰洗地、保護什麼？翻開第三單元「中共對世界24則惡行」——答案在那裡。</p>
+  <p class="note">誠實註記：國安局負責「揭露手法」，未發布給民眾的逐項破解口訣，故本頁破解法不掛國安局名下，改掛真正提出該方法的機關／機構。這頁是純靜態單一檔，沒有留言、登入、資料庫，網軍無從灌爆或竄改；可離線開啟、可自由轉傳、可放任何靜態主機。歡迎原樣備份與鏡像——副本越多，越拆不掉。轉給你在乎的人，就是反制。</p>
 </footer>
 </section>
 
 <section id="view-map" class="view hidden">
   <div class="banner">
   <b>資料截至 2026-07-08 的快照，提名仍在變動。</b>
-  「藍白共推」是國民黨＋民眾黨全民調整合結果；民進黨在花蓮、金門、連江傾向不提名、與非綠合作(選對會未定案)。投票前請以中央選舉委員會候選人登記為準。
+  「藍白共推」是國民黨＋民眾黨全民調整合結果；民進黨在花蓮、金門、連江傾向不提名、與非綠合作(選對會未定案)。投票前請以中央選舉委員會候選人登記為準。<br>
+  <b>投票日 2026-11-28（六）</b>；投票日前 10 天起民調封關（選罷法明定）——封關後看到的任何「民調」，先回第一單元第 04 招。<br>
+  <span id="vote-cd"></span>
 </div>
   <div class="legend">
   <span class="it"><span class="dot dpp"></span>民進黨<span style="color:#74d6a2">(名字可點→官網/紀錄頁)</span></span>
@@ -188,7 +197,7 @@
   <h3>來源與邊界</h3>
   <p>地圖底圖：<a href="https://github.com/g0v/twgeojson" target="_blank" rel="noopener noreferrer">g0v twgeojson</a>(開放資料)。參選名單：<a href="https://news.pts.org.tw/article/801606" target="_blank" rel="noopener noreferrer">公視新聞網 PNN</a>、<a href="https://www.cna.com.tw/news/aipl/202603180245.aspx" target="_blank" rel="noopener noreferrer">中央社</a> 等。</p>
   <p class="note">連結說明(透明標示)：為避免捲入社群留言區的網戰，本地圖只連候選人的「獨立官網或官方/權威紀錄頁」(立法院委員頁、縣市議會、縣府、必要時維基)，一律不連社群粉專(FB／IG／Threads)。民進黨候選人多已連上(沈伯洋/蘇巧慧/何欣純為本人官網，其餘為立法院/縣府/維基等紀錄頁)；藍白與無黨籍候選人不附連結。</p>
-  <p class="note">誠實註記：距投票不到 5 個月，徵召/提名多會轉正式登記，藍白協調與黨內初選仍可能生變(彰化傳「換魏」聲浪、維基另列數位未經新聞查證的參選人，均未採入)。台北為新北所環、嘉義市為嘉義縣所環，地圖已挖空呈現；金門、馬祖(連江)以左上 inset 呈現。此頁純靜態、可離線開啟、可自由轉傳。</p>
+  <p class="note">誠實註記：距投票不到 5 個月，徵召/提名多會轉正式登記，藍白協調與黨內初選仍可能生變(彰化傳「換魏」聲浪、維基另列數位未經新聞查證的參選人，均未採入)。台北為新北所環、嘉義市為嘉義縣所環，地圖已挖空呈現；金門、馬祖(連江)以左上 inset 呈現。此頁純靜態、可離線開啟、可自由轉傳，歡迎原樣備份與鏡像。</p>
 </footer>
 </section>
 
@@ -200,7 +209,7 @@
   <p class="boundary">這一頁反的是中共政權，不是中國人民——24 則裡超過一半的受害者就是中國人。分清政權與人民，正是第一單元第 07 招在教的事。</p>
   <p>· 數字原則：有範圍給範圍（如大饑荒 1,500–5,500 萬）、官方拒絕公布就照實寫「無官方數字」、有爭議就標爭議。查證入口標於每張卡背面：<a href="https://www.ohchr.org/" target="_blank" rel="noopener noreferrer">聯合國人權高專辦（OHCHR）</a>、<a href="https://chinatribunal.com/" target="_blank" rel="noopener noreferrer">China Tribunal</a>、<a href="https://safeguarddefenders.com/" target="_blank" rel="noopener noreferrer">Safeguard Defenders</a>、<a href="https://savetibet.org/" target="_blank" rel="noopener noreferrer">國際聲援西藏運動（ICT）</a>、<a href="https://www.rfa.org/" target="_blank" rel="noopener noreferrer">自由亞洲電台（RFA）</a>、公視、中央社；維基百科（繁中）條目為入口非終點，每條內文附完整一手文獻。</p>
   <p class="note">人物照片取自維基百科／維基共享資源各條目主圖，洛嘎·讓贊取自 Phayul 報導。更登確吉尼瑪自 6 歲被帶走後再無新照片——他的頭像只能是一張塗鴉，這件事本身就是證據。</p>
-  <p class="note">誠實註記：這 24 則是嚴重的低估——反右、大逃港、銅鑼灣書店、器官旅遊、芬太尼……都還沒放進來。本單元將持續擴充，目標 64 則；為什麼是 64，你知道的。此頁純靜態、可離線開啟、可自由轉傳。</p>
+  <p class="note">誠實註記：這 24 則是嚴重的低估——反右、大逃港、銅鑼灣書店、器官旅遊、芬太尼……都還沒放進來。本單元將持續擴充，目標 64 則；為什麼是 64，你知道的。此頁純靜態、可離線開啟、可自由轉傳，歡迎原樣備份與鏡像。</p>
 </footer>
 </section>
 
@@ -213,21 +222,21 @@ const CARDS = [
  {num:"01", tag:"母題 · 失敗論",   attack:"先讓你覺得「台灣撐不住、不如靠別人」。弱小無能、社會內耗、圖謀私利、外國害台，四種說法都通往同一個結論。信心被抽乾，後面什麼都好帶。",
   method:"看到「台灣注定…」的論調先警覺：那是地基，不是結論。<b>任何關於國家戰敗或政府投降的消息，都是假消息。</b>", src:`<a href="https://prepare.mnd.gov.tw/misinformation-prevention" target="_blank" rel="noopener noreferrer">國防部全民防衛動員署《全民安全指引》</a>`},
  {num:"02", tag:"疑美 · 疑軍",     attack:"「軍購是浪費、美國會棄台、打不贏不如不抵抗」。目的是讓你支持砍國防、放掉防衛意志，把你和盟友拆開，孤立了才好下手。",
-  method:"合理檢視可以，全盤死心剛好是對手要的。用 <b>SIFT</b>：停一下→查來源→找其他可信報導→把數字溯回原始脈絡。再問：誰最希望台灣沒有朋友？", src:`<a href="https://hapgood.us/2019/06/19/sift-the-four-moves/" target="_blank" rel="noopener noreferrer">SIFT 方法（國際數位素養）</a>`},
+  method:"合理檢視可以，全盤死心剛好是對手要的。用 <b>SIFT</b>：停一下→查來源→找其他可信報導→把數字追回原始出處。再問：誰最希望台灣沒有朋友？", src:`<a href="https://hapgood.us/2019/06/19/sift-the-four-moves/" target="_blank" rel="noopener noreferrer">SIFT 方法（國際數位素養）</a>`},
  {num:"03", tag:"養套殺 · 經濟糖衣", attack:"農產大單、招待旅遊、進香團、觀光財，包裝成善意。實際是「先養、再套、最後殺」，把依賴當善意，把抗風險的人說成害你沒生意。",
-  method:"<b>冷、確、查</b>：先別急（茶涼了再喝）→ 確認誰委託、誰得利 → 查核。再問一句：這份好處，之後要我用什麼還？", src:`<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a> 查核機構`},
+  method:"<b>冷、確、查</b>：先別急（茶涼了再喝）→ 確認誰委託、誰得利 → 查核。再問一句：這份好處，之後要我用什麼還？<br>◎ 實例：鳳梨、石斑、釋迦——先大單捧著買，再一紙禁令翻臉，這劇本演過不止一次。", src:`<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a> 查核機構`},
  {num:"04", tag:"假民調 · 棄保",    attack:"投票前 10 天民調封關，正是假民調的空窗。丟一份看似專業的數字，讓你以為某人「沒救了」，含淚棄保、改投，或乾脆不投。",
-  method:"封關後冒出的「民調」最可疑。看<b>誰委託、樣本數、抽樣方法、提問有沒有誘導、有沒有公布完整交叉表</b>。趨勢看多家，別讓「大家都說」替你投票。", src:"綜整查核機構建議"},
+  method:"封關後冒出的「民調」最可疑。看<b>誰委託、樣本數、抽樣方法、提問有沒有誘導、有沒有公布完整交叉表</b>。趨勢看多家，別讓「大家都說」替你投票。<br>◎ 2026 現況：例行政黨民調今年只剩一家獨大（另一家 3 月起停發）——可對照的真民調變少了，封關期更要提高警覺。", src:"綜整查核機構建議"},
  {num:"05", tag:"AI 深偽 · 臨門一腳", attack:"最後一週最危險。AI 已能偽造臉與聲音、偽造文件，趕在你來不及查證前，用一支影片讓你帶著情緒投票。",
   method:"<b>深偽四招</b>：① 背景是否模糊 ② 臉部接合處閃爍 ③ 瞳孔不規則、雙眼視線不一致 ④ 嘴型表情與聲音情緒對不對得上。視訊可要求對方轉頭、揮手測破綻。", src:`<a href="https://education.tfc-taiwan.org.tw/articles/8681" target="_blank" rel="noopener noreferrer">台灣事實查核中心／查核基金會</a>`},
  {num:"06", tag:"帳號海 · 內容農場", attack:"你以為「好多人都這樣講，應該是真的」。已查獲案例：幾百個假帳號導流到仿冒新聞農場、上萬組異常帳號洗聲量。熱度可以用買的。",
-  method:"看帳號有沒有「人」的痕跡：<b>歷史、生活、互動</b>。整齊的一窩蜂本身就是警訊。內容農場＝標題聳動、無具名作者、跨站複製、滿版廣告。", src:`綜整查核機構建議 · <a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a>`},
+  method:"看帳號有沒有「人」的痕跡：<b>歷史、生活、互動</b>。整齊的一窩蜂本身就是警訊。內容農場＝標題聳動、無具名作者、跨站複製、滿版廣告。<br>◎ 2026 實例：國安局統計，今年 1 到 3 月就偵獲 1.3 萬個異常帳號、86 萬則爭議訊息——而這只是選前八個月的量。", src:`綜整查核機構建議 · <a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a> · <a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>`},
  {num:"07", tag:"撕裂內耗 · 中奸標籤", attack:"最毒的一招：把社會壓成「非綠即匪」。只要你有自己的判斷、會批評任何一邊，就被打成叛徒、舔共、塔綠班。中間消失，正是對手要的。",
   method:"<b>批評政府不是不忠，有中間立場不是叛徒。</b>逼你「只能二選一」的人，正在替外部消滅中間。停一下問：這句話讓台灣更強，還是更裂？", src:"本頁框架 · 不輕信不轉傳"},
  {num:"08", tag:"偽冒媒體 · 仿冒新聞", attack:"冒出長得像新聞網站、但你沒聽過的來源，或仿冒真媒體的名字、複製版面，真假混雜餵給你；也會盜用真人帳號發文。",
   method:"看<b>「關於我們」、有沒有負責人、網址有沒有錯字、設計破綻</b>，交叉比對真正的台灣媒體。可疑就丟 <b>Cofacts / MyGoPen</b> 查。陌生網域的獨家先存疑。", src:`<a href="https://www.mygopen.com/" target="_blank" rel="noopener noreferrer">MyGoPen</a> · <a href="https://cofacts.tw/" target="_blank" rel="noopener noreferrer">Cofacts 真的假的</a>`},
  {num:"09", tag:"線下滲透 · 賭盤",   attack:"戰場不只在網路。國安局指認的介選手段：地下賭盤操縱選情、落地招待特定人士、觀光名義滲透、找在地協力者代操。",
-  method:"<b>賠率不是民意，團客不是觀光。</b>有人拿賭盤賠率當「行情」帶你跟風，那是設計過的數字。遇到拉攏：記錄、查證，必要時報警或撥 <b>165</b>。", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>揭露 · <a href="https://165.npa.gov.tw/" target="_blank" rel="noopener noreferrer">警政署 165</a>`},
+  method:"<b>賠率不是民意，團客不是觀光。</b>有人拿賭盤賠率當「行情」帶你跟風，那是設計過的數字。遇到拉攏：記錄、查證，必要時報警或撥 <b>165</b>。<br>◎ 2026 實例：最高檢察署 5 月已把地下賭盤、境外介選列入四大查察重點——檢舉境外介選，獎金最高 2,000 萬。", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a>揭露 · <a href="https://165.npa.gov.tw/" target="_blank" rel="noopener noreferrer">警政署 165</a>`},
  {num:"10", tag:"仇日 · 離間所有朋友", attack:"不只疑美。把民生小事接到「親日賣台」這種框架，讓你連台灣的其他朋友（日本）也一起討厭。朋友越少，越好下手。",
   method:"對任何「某國對台不安好心」的大論述先停一下。問：這在拉近台灣和世界，還是把台灣推成孤島？", src:`<a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG 中共月報</a>`},
  {num:"11", tag:"精準分眾 · 客製投餵", attack:"已揭露的操作：對方蒐集大量你的發言，把人分成「頑固／友好／搖擺」，再用 AI 餵你最容易動搖的客製訊息。你以為「剛好滑到」，其實是被挑中投餵。",
@@ -247,11 +256,11 @@ const CARDS = [
  {num:"17", tag:"「台北人命值錢／南部被無視」", attack:"拿真實的南北落差，<b>把矛頭從中央治水責任挪去南北互恨</b>，讓同島的人先互咬。",
   method:"「淹水死人是真的、不公平也是真的。但<b>有人正拿這個痛要我們南北互恨</b>，痛被借去當燃料了。」", src:"本頁框架 · 救友軍"},
  {num:"18", tag:"「雙標！為什麼 A 有報導 B 沒有」", attack:"用選擇性對比餵你被害感，養出「到處是黑幕」的體質，<b>最後你誰都不信、連真媒體也不信</b>。",
-  method:"「先查是真的只報一邊、還是影片被剪過？<b>這種『處處不公』的感覺，是有人故意養的。</b>」", src:"綜整查核機構建議"},
+  method:"「先查是真的只報一邊、還是影片被剪過？<b>這種『處處不公』的感覺，是有人故意養的。</b>」<br>◎ 2026 實例：韓國瘋傳「投票所用華為伺服器做票」，查到最後——是一名選務員把手機熱點取名 Huawei。這套劇本 7 月已傳進台灣，查核中心已闢謠。", src:`綜整查核機構建議 · <a href="https://tfc-taiwan.org.tw/" target="_blank" rel="noopener noreferrer">台灣事實查核中心</a>`},
  {num:"19", tag:"「都是中央的錯／中央八成」", attack:"把任何地方失職一律上推中央、順手嘲諷，<b>讓你分不清究責和帶風向</b>，跟著一起打。",
   method:"「責任可以查，但這句話是要你停止追問本地誰沒做好。<b>先分清：你在究責，還是被帶？</b>」", src:"本頁框架 · 救友軍"},
  {num:"20", tag:"「阿共沒那麼閒／別什麼都牽拖中共」", attack:"反過來嘲笑「提防認知作戰」的人疑神疑鬼，讓你卸下警覺，<b>降低你的防備本身就是攻擊</b>。",
-  method:"「提防不是疑神疑鬼，國安局、IORG 都查過案例。<b>它要你覺得『想太多』，剛好是它最舒服的時候。</b>」", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a> · <a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a>`},
+  method:"「提防不是疑神疑鬼，國安局、IORG 都查過案例。<b>它要你覺得『想太多』，剛好是它最舒服的時候。</b>」<br>◎ 2026 實例：中國公司被抓到在全球 30 國架了 123 個假冒在地媒體的網站（加拿大 Citizen Lab 調查）；韓國國安單位自己清查，另認定境內累計逾 216 個——不是想太多，是產業鏈。", src:`<a href="https://www.nsb.gov.tw/" target="_blank" rel="noopener noreferrer">國安局</a> · <a href="https://iorg.tw/" target="_blank" rel="noopener noreferrer">IORG</a> · <a href="https://citizenlab.ca/2024/02/paperwall-chinese-websites-posing-as-local-news-outlets-with-pro-beijing-content/" target="_blank" rel="noopener noreferrer">Citizen Lab</a>`},
  {num:"21", tag:"「1450／你們也是網軍」", attack:"把「網軍」這頂帽子反扣回自己人，真假混在一起，<b>讓你開始懷疑同陣營每個認真的人</b>。",
   method:"「真有網軍，但不是每個跟你同邊的認真的人都是。<b>帽子亂扣，最後你會孤立到只剩自己。</b>」", src:"本頁框架 · 救友軍"},
  {num:"22", tag:"「投了也沒用／都一樣爛」", attack:"不必說服你支持誰，只要讓你覺得「沒差」，你不去投它就贏了，<b>冷感就是它要的結果</b>。",
@@ -416,6 +425,23 @@ tabs.forEach(function(t){ t.addEventListener('click',function(){
   document.getElementById('view-'+t.dataset.view).classList.remove('hidden');
   window.scrollTo({top:0,behavior:'smooth'});
 });});
+
+var cds=[document.getElementById('vote-cd'),document.getElementById('vote-cd-hero')].filter(Boolean);
+if(cds.length){
+  var T=new Date('2026-11-28T00:00:00+08:00').getTime();
+  var p2=function(n){ return (n<10?'0':'')+n; };
+  var tick=function(){
+    var ms=T-Date.now(), s;
+    if(ms<=0){
+      s = ms>-86400000 ? '<b>今天就是投票日——去投票</b>' : '投票日已過——但認知防線不下班。';
+    }else{
+      var d=Math.floor(ms/86400000), h=Math.floor(ms%86400000/3600000), m=Math.floor(ms%3600000/60000), sec=Math.floor(ms%60000/1000);
+      s='距離投票日還有 <b>'+d+'</b> 天 <b>'+p2(h)+'</b> 時 <b>'+p2(m)+'</b> 分 <b>'+p2(sec)+'</b> 秒';
+    }
+    cds.forEach(function(el){ el.innerHTML=s; });
+  };
+  tick(); setInterval(tick,1000);
+}
 
 })();
 </script>
